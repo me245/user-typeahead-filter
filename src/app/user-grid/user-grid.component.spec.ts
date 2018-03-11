@@ -4,24 +4,24 @@ import { UserGridComponent } from './user-grid.component';
 import { User } from '../data-models/user';
 
 const TEST_USERS: User[] = [
-  {
+  User.fromJSON({
     id: 393887,
     email: 'famousfranko@gmail.com',
     fname: 'Frank',
     lname: 'Nielsen',
-    isCompany: false,
+    isCompany: 0,
     company: '',
-    created: new Date('2017-11-18 00:00:00')
-  },
-  {
+    created: '2017-11-18 00:00:00'
+  }),
+  User.fromJSON({
     id: 394970,
     email: 'businessopp4you@gmail.com',
     fname: 'Shelia',
     lname: 'Smith1',
-    isCompany: false,
+    isCompany: 0,
     company: '',
-    created: new Date('2017-11-18 00:00:00')
-  },
+    created: '2017-11-18 00:00:00'
+  }),
 ];
 
 describe('UserGridComponent', () => {

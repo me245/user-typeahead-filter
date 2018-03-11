@@ -9,7 +9,7 @@ export class User {
   company?: string = void 0;
   created: Date = void 0;
 
-  static fromJSON(json: UserJSON): User {
+  static fromJSON(json: UserJSON | string): User {
     if (typeof json === 'string') {
       return JSON.parse(json, User.reviver);
     } else {

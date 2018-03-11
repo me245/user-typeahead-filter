@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { UserGridComponent } from './user-grid/user-grid.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserGridComponent
   ],
   imports: [
     BrowserModule

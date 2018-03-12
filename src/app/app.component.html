@@ -1,9 +1,9 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
 </div>
 <div class="container-fluid">
-  <app-user-grid></app-user-grid>
+  <app-search-bar></app-search-bar>
+  <app-user-grid [users]="users"></app-user-grid>
 </div>

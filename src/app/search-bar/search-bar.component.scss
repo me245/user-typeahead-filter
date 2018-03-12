@@ -1,0 +1,34 @@
+.custom-control-label {
+  border: 1px solid rgb(206, 212, 218);
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  padding: .25rem;
+  input {
+    border: none;
+  }
+  input:focus {
+    outline: none;
+  }
+  i {
+    opacity: .8;
+  }
+}
+
+.custom-control-label::before {
+  display: none;
+}
+
+.custom-control-label:focus-within {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
+}
+
+label + select {
+  border-radius: 4px;
+}
+
+.form-row:first-child {
+  padding-top: .75rem;
+}

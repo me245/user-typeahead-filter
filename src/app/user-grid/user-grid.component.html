@@ -1,0 +1,26 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>Email</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Is a Company</th>
+      <th>Company Name</th>
+      <th>Created</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let user of users">
+    <tr>
+      <td>{{user.id}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.fname}}</td>
+      <td>{{user.lname}}</td>
+      <td>{{user.isCompany}}</td>
+      <td>{{user.company}}</td>
+      <td>{{user.created}}</td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>

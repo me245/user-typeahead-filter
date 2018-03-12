@@ -31,4 +31,8 @@ label + select {
 
 .form-row:first-child {
   padding-top: .75rem;
+  label {
+    display: flex;
+    align-self: start;
+  }
 }

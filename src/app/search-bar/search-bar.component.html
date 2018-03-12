@@ -1,12 +1,12 @@
 <div class="form-row align-items-center">
   <div class="col-auto my-1">
     <label class="mr-sm-2" for="searchBy">Search By</label>
-    <select [formControl]="searchByControl" class="mr-sm-2 " id="searchBy">
-
+    <select multiple [formControl]="searchByControl" class="mr-sm-2 " id="searchBy">
+      <option *ngFor="let option of searchByOptions;let i = index" [value]="i">{{SearchSelection[i]}}</option>
     </select>
   </div>
   <div class="col-auto my-1 form-inline custom-control-label">
     <input [formControl]="searchControl" type="text" placeholder="search">
     <i class="fa fa-search control-label" aria-hidden="true"></i>
-  </div> 
+  </div>
 </div>

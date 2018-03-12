@@ -4,6 +4,6 @@
   </h1>
 </div>
 <div class="container-fluid">
-  <app-search-bar></app-search-bar>
-  <app-user-grid [users]="users"></app-user-grid>
+  <app-search-bar (searchTerms)="searchChanged($event)"></app-search-bar>
+  <app-user-grid [users]="filteredUsers"></app-user-grid>
 </div>
